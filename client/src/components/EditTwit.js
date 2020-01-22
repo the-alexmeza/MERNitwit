@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+// import axios from 'axios';
 
 export default class EditTwit extends Component {
   constructor(props) {
@@ -8,10 +8,11 @@ export default class EditTwit extends Component {
     this.onChangeTwitBody = this.onChangeTwitBody.bind(this);
     this.onChangeTwitAuthor = this.onChangeTwitAuthor.bind(this);
 
-    this.state = { // TODO: this might override the default declared in models/Twit.js
-      body: '',
-      author: '',
-    }
+    this.state = {
+      // TODO: this might override the default declared in models/Twit.js
+      body: "",
+      author: ""
+    };
   }
 
   onChangeTwitBody(e) {
@@ -44,9 +45,9 @@ export default class EditTwit extends Component {
     // TODO: find out how to flash success message
 
     this.setState({
-      body: '',
-      author: '',
-    })
+      body: "",
+      author: ""
+    });
   }
 
   render() {
@@ -54,6 +55,6 @@ export default class EditTwit extends Component {
       <div>
         <h3>Edit Twit</h3>
       </div>
-    )
+    );
   }
 }
